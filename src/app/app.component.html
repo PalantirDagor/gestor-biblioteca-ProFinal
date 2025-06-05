@@ -1,2 +1,16 @@
-
+<nav class="main-nav">
+  <div class="nav-brand">
+    <i class="fas fa-book-open icon large"></i> Biblioteca
+  </div>
+  <ul class="nav-links">
+    <li><a routerLink="/inicio" routerLinkActive="router-link-active"><i class="fas fa-home icon small"></i> Inicio</a></li>
+    <div class="nav-links" *ngIf="usuarioLogeado">
+      <li><a routerLink="/libros/registrar" routerLinkActive="router-link-active"><i class="fas fa-plus-circle icon small"></i> Registrar Libro</a></li>
+      <li><a routerLink="/libros/actualizar" routerLinkActive="router-link-active"><i class="fas fa-edit icon small"></i> Actualizar Libro</a></li>
+      <li><a routerLink="/libros/eliminar" routerLinkActive="router-link-active"><i class="fas fa-trash-alt icon small"></i> Eliminar Libro</a></li>
+      <li><a routerLink="/libros/buscar" routerLinkActive="router-link-active"><i class="fas fa-search icon small"></i> Buscar Libro</a></li>
+    </div>
+    <li><a routerLink="/login" routerLinkActive="router-link-active"><i class="fas fa-user-circle icon small"></i> Login</a></li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>
