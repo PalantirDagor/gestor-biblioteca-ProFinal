@@ -22,7 +22,7 @@ import { EliminarLibroComponent } from './components/eliminar-libro/eliminar-lib
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
