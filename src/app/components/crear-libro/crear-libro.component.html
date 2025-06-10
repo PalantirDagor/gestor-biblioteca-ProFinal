@@ -1,1 +1,45 @@
-<p>crear-libro works!</p>
+<div class="app-container">
+  <div class="content-card">
+    <h2>Registro de Libros</h2>
+
+    <form [formGroup]="libroForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="autor">Autor</label>
+        <input id="autor" type="text" class="form-control" formControlName="autor">
+      </div>
+
+      <div class="form-group">
+        <label for="titulo">Título del Libro</label>
+        <input id="titulo" type="text" class="form-control" formControlName="titulo">
+      </div>
+
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input id="isbn" type="text" class="form-control" formControlName="isbn">
+      </div>
+
+      <div class="form-group">
+        <label for="editorial">Editorial</label>
+        <input id="editorial" type="text" class="form-control" formControlName="editorial">
+      </div>
+
+      <div class="form-group">
+        <label for="anioEdicion">Año de Edición</label>
+        <input id="anioEdicion" type="text" class="form-control" formControlName="anioEdicion">
+      </div>
+
+      <div class="form-group">
+        <label for="numPaginas">Número de Páginas</label>
+        <input id="numPaginas" type="text" class="form-control" formControlName="numPaginas">
+      </div>
+
+      <button type="submit" [disabled]="libroForm.invalid">Guardar Libro</button>
+    </form>
+
+    <div *ngIf="libroGuardado" class="error-message">
+      Libro guardado correctamente: <br>
+      <pre>{{ libroGuardado | json }}</pre>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+/* Ejemplo: centrar el formulario si el layout lo permite */
+.content-card {
+  max-width: 500px; /* Ancho máximo para el formulario de login */
+  margin: 40px auto; /* Centrar horizontalmente */
+  text-align: center; /* Centrar los elementos internos */
+}
+
+.content-card h2 {
+    text-align: center;
+}
+
+form {
+    text-align: left; /* Restablecer para los elementos del formulario */
+}

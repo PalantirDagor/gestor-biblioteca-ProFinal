@@ -1,0 +1,18 @@
+/* login.component.css */
+/* Aquí podrías añadir estilos específicos para el componente Login si los necesitas,
+   pero muchos ya están cubiertos por los estilos globales y .content-card */
+
+/* Ejemplo: centrar el formulario si el layout lo permite */
+.content-card {
+  max-width: 500px; /* Ancho máximo para el formulario de login */
+  margin: 40px auto; /* Centrar horizontalmente */
+  text-align: center; /* Centrar los elementos internos */
+}
+
+.content-card h2 {
+    text-align: center;
+}
+
+form {
+    text-align: left; /* Restablecer para los elementos del formulario */
+}
